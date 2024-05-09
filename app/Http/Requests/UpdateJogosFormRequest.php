@@ -31,7 +31,7 @@ class UpdateJogosFormRequest extends FormRequest
             'plataformas' => 'max:60|min:3',
             'desenvolvedor' => 'max:120|min:2',
             'distribuidora' => 'max:120|min:2',
-            'categoria' => 'max:55|min:3'
+            'categoria' => 'max:55|min:3',
         ];
     }
     public function failedValidation(Validator $validator)
