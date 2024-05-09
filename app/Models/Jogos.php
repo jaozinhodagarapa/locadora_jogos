@@ -14,7 +14,7 @@ class Jogos extends Model
         'preco',
         'descricao',
         'classificacao',
-        'plataforma',
+        'plataformas',
         'desenvolvedor',
         'distribuidora',
         'categoria',

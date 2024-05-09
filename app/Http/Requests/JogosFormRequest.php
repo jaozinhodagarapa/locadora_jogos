@@ -25,7 +25,7 @@ class JogosFormRequest extends FormRequest
     {
         return [
             'nome' => 'required|max:120|min:5|unique:jogos,nome',
-            'preco' => 'required|decimal:12,2',
+            'preco' => 'required|decimal:2',
             'descricao' => 'required|max:800|min:10',
             'classificacao' => 'required|max:20|min:5',
             'plataformas' => 'required|max:60|min:3',
