@@ -2,7 +2,7 @@
 =======
 <div align= "center">
 
-![Logo]()
+![Logo](https://github.com/jaozinhodagarapa/locadora_jogos/blob/main/app/Assets/imagem/logoJogos.png)
 </div>
 
 ## Como utilizar este repositório
