@@ -5,18 +5,18 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 
-Route::post('cadastro/jogos',[JogosController::class, 'store']);
+//* Jogos
+Route::post('cadastro/jogos', [JogosController::class, 'cadastroJogos']);
 
-Route::get('pesquisa/jogo/{id}', [JogosController::class, 'pesquisaPorId']);
+Route::get('pesquisa/jogo/{id}', [JogosController::class, 'pesquisaPorIdJogos']);
 
-Route::get('buscaNome/jogo/', [JogosController::class, 'pesquisarPorNomeJogo']);
+Route::post('buscaNome/jogo', [JogosController::class, 'pesquisarPorNomeJogo']);
 
-Route::get('retornarTodos/jogo', [JogosController::class, 'retornarTodosJogos']);
+Route::get('retornarTodos/jogos', [JogosController::class, 'retornarTodosJogos']);
 
 Route::put('atualizar/jogos', [JogosController::class, 'atualizarJogos']);
 
-Route::get('excluir/jogos/{id}', [JogosController::class, 'excluirJogo']);
-
+Route::delete('excluir/jogos/{id}', [JogosController::class, 'excluirJogos']);
 
 
 
