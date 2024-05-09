@@ -9,7 +9,7 @@
 
 1. Clone este repositório para o seu ambiente de desenvolvimento local utilizando o comando:
 ```
- git clone https://github.com/casagrande7/locadora_jogos.git
+ git clone https://github.com/jaozinhodagarapa/locadora_jogos.git
 ```
 2. Acesse o diretório do projeto:
 ```
@@ -31,7 +31,7 @@ code .
 
 
 ##Insomnia
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=locadora_jogos&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fcasagrande7%2Flocadora_jogos%2Fmain%2FInsomnia-All_2024-05-09.json)
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=locadora_jogos&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fjaozinhodagarapa2Flocadora_jogos%2Fmain%2FInsomnia-All_2024-05-09.json)
 
 ## Licença
 
