@@ -6,17 +6,17 @@ use Illuminate\Support\Facades\Route;
 
 
 //* Jogos
-Route::post('cadastro/jogos', [JogosController::class, 'cadastroJogos']);
+Route::post('register/games', [JogosController::class, 'cadastroJogos']);
 
-Route::get('pesquisa/jogo/{id}', [JogosController::class, 'pesquisaPorIdJogos']);
+Route::get('search/game/{id}', [JogosController::class, 'pesquisaPorIdJogos']);
 
-Route::post('buscaNome/jogo', [JogosController::class, 'pesquisarPorNomeJogo']);
+Route::post('searchGame/byname', [JogosController::class, 'pesquisarPorNomeJogo']);
 
-Route::get('retornarTodos/jogos', [JogosController::class, 'retornarTodosJogos']);
+Route::get('return/all/games', [JogosController::class, 'retornarTodosJogos']);
 
-Route::put('atualizar/jogos', [JogosController::class, 'atualizarJogos']);
+Route::put('update/games', [JogosController::class, 'atualizarJogos']);
 
-Route::delete('excluir/jogos/{id}', [JogosController::class, 'excluirJogos']);
+Route::delete('delete/games/{id}', [JogosController::class, 'excluirJogos']);
 
 
 
