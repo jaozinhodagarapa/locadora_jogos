@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Jogos extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'nome',
         'preco',
@@ -17,6 +16,6 @@ class Jogos extends Model
         'plataformas',
         'desenvolvedor',
         'distribuidora',
-        'categoria',
+        'categoria'
     ];
 }

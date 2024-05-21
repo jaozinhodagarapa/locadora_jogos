@@ -28,7 +28,7 @@ class JogosController extends Controller
         ], 200);
     }
 
-    public function pesquisaPorIdJogos($id)
+    public function pesquisarIdJogos($id)
     {
         $jogos = Jogos::find($id);
         if ($jogos == null) {
@@ -43,7 +43,7 @@ class JogosController extends Controller
         ]);
     }
 
-    public function pesquisarPorNomeJogo(Request $request)
+    public function pesquisarNomeJogo(Request $request)
     {
         $jogos = Jogos::where('nome', 'like', '%' . $request->nome . '%')->get();
 
@@ -64,11 +64,19 @@ class JogosController extends Controller
     {
         $jogos = Jogos::all();
 
-        return response()->json([
-            'status' => true,
-            'data' => $jogos
-        ]);
+        if ($jogos->count() > 0) {
+            return response()->json([
+                'status' => true,
+                'data' => $jogos
+            ]);
+        } else {
+            return response()->json([
+                'status' => false,
+                'data' => "Nenhum jogo registrado"
+            ]);
+        }
     }
+
 
     public function atualizarJogos(UpdateJogosFormRequest $request)
     {
