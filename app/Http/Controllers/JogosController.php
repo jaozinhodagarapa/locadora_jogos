@@ -107,17 +107,15 @@ class JogosController extends Controller
         if (isset($request->plataformas)) {
             $jogos->plataformas = $request->plataformas;
         }
-
-        if (isset($request->desenvolvedor)) {
-            $jogos->desenvolvedor = $request->desenvolvedor;
-        }
-
         if (isset($request->desenvolvedor)) {
             $jogos->desenvolvedor = $request->desenvolvedor;
         }
 
         if (isset($request->distribuidora)) {
             $jogos->distribuidora = $request->distribuidora;
+        }
+        if (isset($request->categoria)) {
+            $jogos->categoria = $request->categoria;
         }
         $jogos->update();
         return response()->json([
